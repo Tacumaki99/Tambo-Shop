@@ -1,0 +1,42 @@
+
+.about_shop {
+    padding-top: 3rem;
+    color: white;
+}
+
+.about_shop {
+    font-size: 1.2rem;
+    margin: 3rem auto;
+    max-width: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.about_shop__image-container {
+    width: 45%;
+    max-width: 40rem;
+    box-shadow: 3px 3px 5px 3px rgba(0,0,0,0.3),3px;
+}
+
+.about_shop__image {
+    width: 100%;
+    vertical-align: top;
+}
+
+.about_shop__info {
+    text-align: right;
+    padding: 0.9rem;
+    width: 70%;
+}
+
+.about_shop__name {
+    margin: 0.2rem;
+    color: #033311;
+    font-size: 2rem;
+}
+
+.about_shop__text {
+    margin: 0.2rem;
+}
+
