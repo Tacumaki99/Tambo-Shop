@@ -1,7 +1,7 @@
 @font-face {
     font-family: "typo_draft";
     src:
-      url("https://www.dafont.com/typo-draft.font");
+      url("../../typo_draft/Typo\ Draft\ Demo.otf");
   }
 
 * {
@@ -62,5 +62,26 @@ body {
     color: white;
     font-weight: bold;
     padding: 0.2rem 0;
+}
+
+.header-text {
+    padding: 1rem;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    display: inline-block;
+    color: black;
+    text-align: left;
+}
+
+.header-text p {
+    margin: auto;
+    font-size: 4em;
+    font-weight: bold;
+    text-shadow: 0 0 5px white;
     font-family: typo_draft;
+}
+
+.header-text p {
+    text-indent: 3.5rem;
 }
