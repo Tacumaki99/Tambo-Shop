@@ -17,20 +17,19 @@ body {
     display: grid;
     grid-template-rows: auto ;
     grid-template-areas: 'header' 'main' 'footer';
-    height: 100%;
-    background-color: black;
+    height: 100vh;
+    background-image: url(../img/main_backgroung.jpg);
+    background-attachment: fixed;
+    background-size: cover;    
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .main-header {
     grid-area : 'header';
     height: 100vh;
-    background-image: url(../img/main_backgroung.jpg);
-    background-size: cover;    
-    background-repeat: no-repeat;
-    background-position: center;
     opacity: 0.70;
     position: relative;
-    background-attachment: fixed;
 }
 
 .main-nav {
