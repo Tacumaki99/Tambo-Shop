@@ -219,8 +219,8 @@ SLIDES_OBJ.forEach((slide, index) => {
 
 //fillerText
 
-var author = document.getElementById('author');
+//var author = document.getElementById('author');
 
-var html = fillerText('author', 'hjdshdjsh');
+//var html = fillerText('author', 'hjdshdjsh');
 
-author.innerHTML = html;
+//author.innerHTML = html;
