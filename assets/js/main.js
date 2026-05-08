@@ -6,11 +6,7 @@ const nav = [
   },
   {
     name: "Products",
-    href: "#products"
-  },
-  {
-    name: "Services",
-    href: "#services"
+    href: "products.html"
   },
   {
     name: "Contact",
@@ -46,179 +42,8 @@ function myFunction() {
     x.classList.add('myLinks')
   }
 }
+/*
 
-
-//products
-
-const products = [
-  {
-    image: "Camera.jpg",
-    name: "Chocolate Camera",
-    price: 19.99,
-    description: "A delicious chocolate replica of a classic camera."
-  },
-  {
-    image: "Viola.png",
-    name: "Chocolate viola",
-    price: 29.99,
-    description: "Looks like a phone, tastes like chocolate."
-  },
-  {
-    image: "Pistol.jpg",
-    name: "Chocolate Pistol",
-    price: 39.99,
-    description: "Luxury design, sweet flavor."
-  },
-  {
-    image: "AroundA.jpg",
-    name: "Chocolate @",
-    price: 19.99,
-    description: "A delicious chocolate replica of a monkey A."
-  },
-  {
-    image: "Horse.jpg",
-    name: "Chocolate Horseshoe",
-    price: 29.99,
-    description: "Looks like a horseshoe, tastes like chocolate."
-  },
-  {
-    image: "Lighter.jpg",
-    name: "Chocolate Lighter",
-    price: 39.99,
-    description: "A delicious chocolate replica of a lighter."
-  }
-];
-
-
-const holder = document.getElementById("product-holder");
-
-let product_html = "";
-
-products.forEach(product => {
-  product_html += `
-    <div class="product-card">
-      <img src="assets/images/${product.image}" alt="${product.name}">
-      <h3>${product.name}</h3>
-      <p class="price">$${product.price}</p>
-      <button>Add to Cart</button>
-    </div>
-  `;
-});
-
-holder.innerHTML = product_html;
-
-//slider
-
-//services-list
-let services = [
-  {
-    index:0,
-    name:'Chocolate Workshops',
-    description: 'Hands-on chocolate making with expert chocolatiers.',
-    img: 'workshop.gif'
-  },
-  {
-    index:1,
-    name:'Custom Chocolate',
-    description: 'Personalized chocolate creations for any occasion.',
-    img: 'custom.gif'
-  },
-  {
-    index:2,
-    name:'Factory Tours',
-    description: 'Discover how fine chocolate is crafted.',
-    img: 'tour.gif'
-  },
-  {
-    index:3,
-    name:'Catering',
-    description: 'Delight your guests with handcrafted chocolate experiences tailored for your event.',
-    img: 'catering.gif'
-  }
-]
-
-const services_list = document.getElementById("services-list");
-
-let service_list_html = ''
-
-services.forEach(service => {
-  service_list_html += `
-    <li data-index="${service.index}">${service.name}</li>
-  `;
-});
-
-services_list.innerHTML = service_list_html;
-
-const services_track = document.getElementById("services-track");
-
-let services_track_html = ''
-
-services.forEach(service => {
-  services_track_html += `
-                  <div class="service-slide slide-${service.index}">
-                    <div class="service-content">
-                      <p>${service.description}</p>
-                    </div>
-                  </div>
-  `;
-});
-
-services_track.innerHTML = services_track_html;
-
-
-$(document).ready(function () {
-    let index = 0;
-    const slides = $('.service-slide');
-    const total = slides.length;
-
-    const dotsContainer = $('.service-dots');
-    const serviceItems = $('#services-list li');
-
-    // Create dots
-    slides.each(function (i) {
-        dotsContainer.append(`<span class="service-dot" data-index="${i}"></span>`);
-    });
-
-    const dots = $('.service-dot');
-
-    function updateSlider() {
-        $('#services-track').css(
-            'transform',
-            `translateX(-${index * 100}%)`
-        );
-
-        // Update dots
-        dots.removeClass('active');
-        dots.eq(index).addClass('active');
-
-        // Update services list
-        serviceItems.removeClass('active');
-        serviceItems.eq(index).addClass('active');
-    }
-
-    // Initial state
-    updateSlider();
-
-    $('.service-btn.next').click(function () {
-        index = (index + 1) % total;
-        updateSlider();
-    });
-
-    $('.service-btn.prev').click(function () {
-        index = (index - 1 + total) % total;
-        updateSlider();
-    });
-
-    dots.click(function () {
-        index = $(this).data('index');
-        updateSlider();
-    });
-
-    serviceItems.click(function () {
-        index = $(this).data('index');
-        updateSlider();
-    });
-});
 
 
 //form
@@ -475,3 +300,55 @@ $('#success-popup').on('click', function (e) {
 });
 
 });
+*/
+
+function fillerText(image, description){
+    let html=`<section class="author-page py-5">
+
+        <div class="container">
+
+            <div class="row align-items-center min-vh-100">
+
+                <div class="col-lg-6 mb-4 mb-lg-0">
+
+                    <img src="assets/images/author.jpg"
+                         alt="Author Tamara Pavlović"
+                         class="img-fluid rounded shadow-lg">
+
+                </div>
+
+                <div class="col-lg-6 text-center text-lg-start">
+
+                    <h1 class="display-3 mb-4">
+                        Tamara Pavlović
+                    </h1>
+
+                    <p class="lead">
+                        Hey! My name is Tamara. I am from Belgrade.
+                        I'm currently attending the College of Information
+                        and Communication Technologies.
+                    </p>
+
+                    <p class="lead">
+                        Before college I finished Zemunska Grammar School
+                        and Music School "Stanković".
+                    </p>
+
+                    <p class="lead">
+                        In my spare time I play the trumpet
+                        and practice karate.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>`
+
+
+    return html
+    
+    
+}

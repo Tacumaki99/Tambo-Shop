@@ -73,151 +73,38 @@
         <h2>TRANSFORM YOUR VISIONS INTO WOODEN WONDERS</h2>
     </section>
 
-    <!-- Products -->
-    <section id="products">
-        <h2 class="product-title">Our Products</h2>
-
-        <div class="product-holder" id="product-holder">
-            <!--OLD PRODUCT LIST
-            <div class="product-card">
-                <img src="assets/images/Camera.jpg" alt="Chocolate Camera">
-                <h3>Chocolate Camera</h3>
-                <p class="price">$19.99</p>
-                <button type="button">Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-                <img src="assets/images/Camera.jpg" alt="Chocolate Phone">
-                <h3>Chocolate Phone</h3>
-                <p class="price">$29.99</p>
-                <button type="button">Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-                <img src="assets/images/Camera.jpg" alt="Chocolate Watch">
-                <h3>Chocolate Watch</h3>
-                <p class="price">$39.99</p>
-                <button type="button">Add to Cart</button>
-            </div>-->
-
-        </div>
-    </section>
-
     <!--Services-->
-        <section id="services">
-            <div class="services-slider">
+    <section id="services" class="py-5" id="services">
+                            
+        <div class="container">
 
-               
-                <ul id ="services-list">
-                <!--
-                    <li data-index="0">Chocolate Workshops</li>
-                    <li data-index="1">Custom Chocolate</li>
-                    <li data-index="2">Factory Tours</li>
-                    <li data-index="3">Catering</li>
-                -->
-                </ul>
+            <!-- SECTION TITLE -->
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold">
+                    Our Services
+                </h2>
 
-                <div id="services-track">
-                <!--OLD SERVICE LIST
-                    <div class="service-slide slide-1">
-                        <div class="service-content">
-                            <p>Hands-on chocolate making with expert chocolatiers.</p>
-                        </div>
-                    </div>
+                <p class="text-muted">
+                    Handcrafted pieces designed for every lover of fine woodworking.
+                </p>
+            </div>
 
-                    <div class="service-slide slide-2">
-                        <div class="service-content">
-                            <p>Personalized chocolate creations for any occasion.</p>
-                        </div>
-                    </div>
+            <!-- CAROUSEL -->
+            <div id="servicesCarousel" class="carousel slide carousel-fade">
+                <div id="servicesCarousel" class="carousel slide" data-bs-ride="carousel">
 
-                    <div class="service-slide slide-3">
-                        <div class="service-content">
-                            <p>Discover how fine chocolate is crafted.</p>
-                        </div>
-                    </div>
-                    <div class="service-slide slide-4">
-                        <div class="service-content">
-                            <p>Delight your guests with handcrafted chocolate experiences tailored for your event.</p>
-                        </div>
-                    </div>
-                -->
-                </div>
+                <div id="carouselIndicators" class="carousel-indicators"></div>
 
-                
-                <div class="service-controls">
-                    <button class="service-btn prev">❮</button>
-                    <div class="service-dots"></div>
-                    <button class="service-btn next">❯</button>
-                </div>
+                <div id="carouselInner" class="carousel-inner rounded-4 overflow-hidden shadow-lg"></div>
 
             </div>
-        </section>
+        </div>
 
-    <!--contact
-    
-   <section id="contact">
-    <h2 class="signup-title">
-        Step into the world of fine chocolate. Reserve your place and enjoy a truly indulgent experience.
-    </h2>
+    </section>
+<section class="author-page py-5" id="author">
 
-    <form action="#" method="post" class="signup-form">
-
-            <div class="form-row">
-                    <div class="form-group">
-                        <label for="first-name">First Name</label>
-                        <input type="text" id="first-name" name="first_name" required>
-                        <span class="input-error"></span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="last-name">Last Name</label>
-                        <input type="text" id="last-name" name="last_name" required>
-                        <span class="input-error"></span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">E-Mail</label>
-                        <input type="email" id="email" name="email" required>
-                        <span class="input-error"></span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="phone">Phone</label>
-                        <input type="text" id="phone" name="phone" required>
-                        <span class="input-error"></span>
-                    </div>
-                    <div class="form-group">
-                                <label for="event">Event</label>
-                                <select id="event" name="event" required>
-                                    <option value="1">Select an event</option>
-                                    <option value="workshop">Chocolate Workshop</option>
-                                    <option value="tour">Factory Tour</option>
-                                    <option value="corporate">Catering</option>
-                                    <option value="custom">Custom Experience</option>
-                                </select>
-                                <span class="input-error"></span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="people">Number of People</label>
-                        <input type="number" id="people" name="people" min="1" max="20" required>
-                        <span class="input-error"></span>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="date">Preferred Date</label>
-                        <input type="date" id="date" name="date" required>
-                        <span class="input-error"></span>
-                    </div>
-                    <button type="submit" class="button" disabled>Reserve Now</button>
-                </div>
-    </form>
-
-
-
-        </section>
-    --> 
+</section>
+ 
 </main>
 
 <footer class="bg-dark text-white py-4">
@@ -246,6 +133,7 @@
 
 
 <script src="assets/js/main.js"></script>
+<script src="assets/js/index.js"></script>
 <div id="success-popup" class="popup-overlay">
     <div class="popup-box">
         <h2>Reservation Confirmed</h2>
@@ -253,5 +141,215 @@
         <button id="close-popup" class="button">OK</button>
     </div>
 </div>
+
+<!-- TESTIMONIAL / AUTHOR / DETAILS SECTION -->
+<section class="info-showcase py-5">
+
+  <div class="container">
+
+    <!-- SECTION HEADER -->
+    <div class="text-center mb-5">
+
+      <span class="section-badge">
+        Client Stories
+      </span>
+
+      <h2 class="section-title">
+        Crafted With Passion
+      </h2>
+
+      <p class="section-description">
+        Elegant sections you can reuse for testimonials, founder stories,
+        product details, craftsmanship highlights, or custom content.
+      </p>
+
+    </div>
+
+    <!-- CARD 1 -->
+    <div class="showcase-card mb-5">
+
+      <div class="row align-items-center g-0">
+
+        <!-- IMAGE -->
+        <div class="col-lg-5">
+
+          <div class="showcase-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=1200&auto=format&fit=crop"
+              alt=""
+            >
+
+          </div>
+
+        </div>
+
+        <!-- CONTENT -->
+        <div class="col-lg-7">
+
+          <div class="showcase-content">
+
+            <div class="quote-icon">
+              “
+            </div>
+
+            <h3>
+              Exceptional Craftsmanship
+            </h3>
+
+            <p>
+              Every detail was handcrafted with incredible precision.
+              The final result completely transformed our dining space
+              and exceeded expectations.
+            </p>
+
+            <div class="showcase-author">
+
+              <img
+                src="https://randomuser.me/api/portraits/women/44.jpg"
+                alt=""
+              >
+
+              <div>
+
+                <h5>
+                  Sarah Mitchell
+                </h5>
+
+                <span>
+                  Interior Designer
+                </span>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="showcase-card reverse mb-5">
+
+      <div class="row align-items-center g-0 flex-lg-row-reverse">
+
+        <!-- IMAGE -->
+        <div class="col-lg-5">
+
+          <div class="showcase-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1493663284031-b7e3aefcae8e?q=80&w=1200&auto=format&fit=crop"
+              alt=""
+            >
+
+          </div>
+
+        </div>
+
+        <!-- CONTENT -->
+        <div class="col-lg-7">
+
+          <div class="showcase-content">
+
+            <span class="mini-badge">
+              Founder Story
+            </span>
+
+            <h3>
+              Handmade With Tradition
+            </h3>
+
+            <p>
+              We combine modern woodworking techniques with timeless
+              craftsmanship to create furniture that lasts for generations.
+              Every project is custom-built and carefully finished by hand.
+            </p>
+
+            <button class="btn btn-dark btn-lg mt-3">
+              Learn More
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="showcase-card">
+
+      <div class="row align-items-center g-0">
+
+        <!-- IMAGE -->
+        <div class="col-lg-5">
+
+          <div class="showcase-image">
+
+            <img
+              src="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=1200&auto=format&fit=crop"
+              alt=""
+            >
+
+          </div>
+
+        </div>
+
+        <!-- CONTENT -->
+        <div class="col-lg-7">
+
+          <div class="showcase-content">
+
+            <span class="mini-badge">
+              Premium Materials
+            </span>
+
+            <h3>
+              Sustainable Natural Wood
+            </h3>
+
+            <p>
+              We use carefully selected oak, walnut, and ash wood sourced
+              from trusted suppliers to ensure durability, beauty, and
+              sustainability in every piece.
+            </p>
+
+            <!-- DETAILS -->
+            <div class="details-grid">
+
+              <div class="detail-box">
+                <h4>100%</h4>
+                <span>Handmade</span>
+              </div>
+
+              <div class="detail-box">
+                <h4>15+</h4>
+                <span>Years Experience</span>
+              </div>
+
+              <div class="detail-box">
+                <h4>500+</h4>
+                <span>Projects Completed</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 </body>
 </html>
